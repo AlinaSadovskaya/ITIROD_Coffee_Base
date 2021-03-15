@@ -278,3 +278,187 @@ footer .contacts .mail-link:hover {
   background-color: #007070;
 }
 
+/*side-panel*/
+#side-checkbox {
+  display: none;
+}
+
+.side-panel {
+  position: fixed;
+  z-index: 999999;
+  top: 65px;
+  left: -360px;
+  background:  #3f2714ce;
+  transition: all 0.5s;   
+  width: 320px;
+  height: 100vh;
+  box-shadow: 10px 0 20px rgba(0,0,0,0.4);
+  color: #FFF;
+  padding: 40px 20px;
+}
+
+.side-title {
+  font-size: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #BFE2FF;
+}
+/* Оформление кнопки на странице */
+.side-button-1-wr {
+  text-align: left; /* Контейнер для кнопки, чтобы было удобнее ее разместить */
+}
+
+.side-button-1 .side-b {
+  margin-top: 5px;
+  position: relative;
+  font-size: 20px;
+  padding: 10px 6px;
+  color: #FFF;
+  background: #3f2714;
+  cursor: pointer; 
+  max-width: 90px;
+}
+
+.side-button-1 .side-b:hover,
+.side-button-1 .side-b:active,
+.side-button-1 .side-b:focus {
+  color: #FFF;
+}
+
+.side-button-1 .side-b:after,
+.side-button-1 .side-b:before {
+  position: absolute;
+  height: 4px;
+  left: 50%;
+  bottom: -6px;
+  content: "";
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.side-button-1 .side-open:after,
+.side-button-1 .side-open:before {
+  background: #E0926E;
+}
+
+.side-button-1 .side-b:before {
+  top: -6px;
+}
+
+.side-button-1 .side-b:hover:after,
+.side-button-1 .side-b:hover:before {
+  width: 100%;
+  left: 0;
+}
+
+#side-checkbox:checked + .side-panel + .side-button-1-wr .side-button-1 .side-open {
+  display: none;
+}
+
+#side-checkbox:checked + .side-panel {
+  left: 0;
+}
+
+/* Оформление кнопки на панеле */
+.side-button-2 {
+  font-size: 30px;
+  border-radius: 20px;
+  position: absolute;
+  z-index: 1;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  transform: rotate(45deg);
+  color: #BFE2FF;    
+  transition: all 280ms ease-in-out;    
+}
+
+.side-button-2:hover {
+  transform: rotate(45deg) scale(1.1);    
+  color: #FFF;
+}
+
+* {
+  font-family: Helvetica Neue Light, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-weight: lighter;
+}
+
+/*списки фильтрации и сортировки*/
+
+.filter{
+  margin-top: 15px;
+}
+
+.sort{
+  margin-top: 70px;
+}
+
+.filter-select{
+  text-align: center;
+  color: #EEE3DB;
+}
+
+.beads {
+  list-style: none;
+  background: #EEE3DB;
+  margin: 0;
+  padding-left: 40px;
+  border-radius: 5px;
+}
+
+.beads li {
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 40px;
+  border-bottom: 1px solid #D4D7D6;
+  position: relative;
+}
+
+.beads a {
+  text-decoration: none;
+  color: #464643;
+  display: block;
+  line-height: 40px;
+  position: relative;
+}
+  
+.beads a:before {
+  content:"";
+  position: absolute;
+  left: -20px;
+  top: 6px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #A58063;
+}
+
+.beads li:last-child {border-bottom: none;}
+
+.beads li:before, 
+.beads li:after {
+  content:"";
+  position: absolute;
+  border-radius: 50%;
+}
+  
+.beads li:before {
+  top: calc(50% - 5px);
+  background: #E0926E;
+  left: -22px;
+  width: 10px;
+  height: 10px;
+  transition: 0.5s linear;
+}
+
+.beads li:after {
+  bottom: 6px;
+  left: -20px;
+  width: 6px;
+  height: 6px;
+  background: #A58063;
+}
+  
+.beads li:hover:before {background: #FFCE08;}
