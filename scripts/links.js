@@ -1,9 +1,13 @@
 const routes = {
+    '/login': login,
     '/register': register
+
 };
 
 const scripts = {
-    '/register': "/scripts/registrate.js"
+    '/register': "scripts/registrate.js",
+    '/login': "scripts/registrate.js"
+
 }
 
 function getPathWithoutParams(pathname) {

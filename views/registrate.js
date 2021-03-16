@@ -1,5 +1,5 @@
 const register = `
-<link rel="stylesheet" href="/styles/registrate.css">
+<link rel="stylesheet" href="styles/registrate.css">
 <section class="register-section">
   <form class="register-form" onsubmit="submitSignUpForm(); return false;">
     <label for="login-input">EMAIL</label>
