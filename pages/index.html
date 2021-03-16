@@ -5,8 +5,7 @@
     <meta charset="utf-8">
     <title>CoffeeBase</title>
     <link rel="stylesheet" href="/styles/main.css">
-    <script src="/scripts/catalog.js"></script>
-    <script src="scripts/main.js"></script>
+    <script src="/views/registrate.js"></script>
     <script src="https://kit.fontawesome.com/c25464de2f.js" crossorigin="anonymous"></script>
 
 </head>
@@ -34,41 +33,15 @@
             </form>
         </div>
         <div class="authorization">
-            <a href="#" class="sign-up" title='SignIn'><i class="fas fa-user-plus"></i></a>
+            <li id="signup-link"><a class="sign-up" title='SignIn'><i class="fas fa-user-plus"></i></a></li>
             <a href="#" class="login" title='LogIn'><i class="fa fa-sign-in"></i></a>
         </div>
     </header>
 
     <main id="root">
-        <input type="checkbox" id="side-checkbox" />
-        <div class="side-panel">
-            <label class="side-button-2" for="side-checkbox">+</label>
-            <link rel="stylesheet" href="styles/catalog.css">
-            <div>
-                <div class="filter">
-                    <h3 class="filter-select">FILTER</h3>
-                    <ul class="beads">
-                        <li><a href="#">ALL</a></li>
-                        <li><a href="#">TOP</a></li>
-                    </ul>
-                </div>
-                <div class="sort">
-                    <h3 class="filter-select">SORT</h3>
-                    <ul class="beads">
-                        <li><a href="#">RATING</a></li>
-                        <li><a href="#">DATE</a></li>
-                        <li><a href="#">NAME</a></li>
-                    </ul>
-                </div>
-            </div>
-            <section class="catalog-grid" id="catalog-grid">
-            </section>
-        </div>
-        <div class="side-button-1-wr">
-            <label class="side-button-1" for="side-checkbox">
-                <div class="side-b side-open">Filter/Sort</div>
-            </label>
-        </div>
+
+        <script src="/scripts/main.js"></script>
+        <script src="/scripts/links.js"></script>
     </main>
 
     <footer>

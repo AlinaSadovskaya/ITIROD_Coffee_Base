@@ -1,0 +1,42 @@
+main {
+    padding-top: 150px;
+    min-width: 500px;
+    width: 60%;
+    margin: 0 auto;
+}
+  
+section {
+    width: 100%;
+}
+  
+main form {
+    width: 60%;
+    background-color:#3f2714ce;
+    margin: 0 auto;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 40px 60px;
+    font-size: 1.5em;
+}
+  
+main label{
+      color:white;
+}
+
+main form input {
+    width: 100%;
+    font-size: 1.2em;
+    box-sizing: border-box;
+    padding: 5px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+  
+  main form button {
+    display: block;
+    margin: 0 0 0 auto;
+    font-size: inherit;
+    padding: 5px;
+  }
+  
+  
