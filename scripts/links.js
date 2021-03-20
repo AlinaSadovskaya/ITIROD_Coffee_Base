@@ -1,7 +1,8 @@
 const routes = {
     '/login': login,
-    '/register': register
-
+    '/register': register,
+    '/catalog': catalog,
+    '/': catalog
 };
 
 const scripts = {
