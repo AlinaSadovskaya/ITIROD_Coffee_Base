@@ -2,6 +2,7 @@ const routes = {
     '/login': login,
     '/register': register,
     '/catalog': catalog,
+    '/create': create,
     '/': catalog
 };
 
