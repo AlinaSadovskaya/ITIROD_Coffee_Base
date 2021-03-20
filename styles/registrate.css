@@ -42,4 +42,30 @@ main form button {
     color: white;
 }
   
+@media only screen
+    and (max-device-width : 500px)
+    and (orientation: portrait) {
+
+      main {
+        width: 70%;
+        padding-top: 20vh;
+      }
+
+      main form {
+        width: 100%;
+        border-radius: 40px;
+        padding: 70px 90px;
+        font-size: 2.5em;
+      }
+
+      main form input {
+        padding: 10px;
+        margin-bottom: 40px;
+        margin-top: 15px;
+      }
+
+      main form button {
+        padding: 10px 20px;
+      }
+}
   
