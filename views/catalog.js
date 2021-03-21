@@ -31,25 +31,25 @@ const catalog = `
             </label>
         </div>
         <section class="catalog-grid">
-        <a class = "rating" href="coffee-info.html">
-          <div class="catalog-item">
-              <div class="coffee-image">
-                <img src="images/empty-cup.png" alt="empty-cup">
-                <div class="coffee-ingredient ingredient1 syrup"></div>
-                <div class="coffee-ingredient ingredient2 milk"></div>
-                <div class="coffee-ingredient ingredient3 espresso"></div>
-              </div>
-              <p class="coffee-title">CAPPUCCINO</p>
-              <div class="grid-item-rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-              </div>
-          </div>
-        </a>
-        <a class = "rating" href="coffee-info.html">
+        <a class = "rating" onclick="onNavigate('/details')">
+            <div class="catalog-item">
+                <div class="coffee-image">
+                  <img src="images/empty-cup.png" alt="empty-cup">
+                  <div class="coffee-ingredient ingredient1 syrup"></div>
+                  <div class="coffee-ingredient ingredient2 milk"></div>
+                  <div class="coffee-ingredient ingredient3 espresso"></div>
+                </div>
+                <p class="coffee-title">CAPPUCCINO</p>
+                <div class="grid-item-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+            </div>
+          </a>
+        <a class = "rating" onclick="onNavigate('/details')">
           <div class="catalog-item">
               <div class="coffee-image">
                 <img src="images/empty-cup.png" alt="empty-cup">
@@ -67,7 +67,7 @@ const catalog = `
               </div>
           </div>
         </a>
-        <a class = "rating" href="coffee-info.html">
+        <a class = "rating" onclick="onNavigate('/details')">
           <div class="catalog-item">
               <div class="coffee-image">
                 <img src="images/empty-cup.png" alt="empty-cup">
@@ -85,7 +85,7 @@ const catalog = `
               </div>
           </div>
         </a>
-        <a class = "rating" href="coffee-info.html">
+        <a class = "rating" onclick="onNavigate('/details')">
           <div class="catalog-item">
               <div class="coffee-image">
                 <img src="images/empty-cup.png" alt="empty-cup">
@@ -103,7 +103,7 @@ const catalog = `
               </div>
           </div>
         </a>
-        <a class = "rating" href="coffee-info.html">
+        <a class = "rating" onclick="onNavigate('/details')">
           <div class="catalog-item">
               <div class="coffee-image">
                 <img src="images/empty-cup.png" alt="empty-cup">
@@ -121,7 +121,7 @@ const catalog = `
               </div>
           </div>
         </a>
-        <a class = "rating" href="coffee-info.html">
+        <a class = "rating" onclick="onNavigate('/details')">
           <div class="catalog-item">
               <div class="coffee-image">
                 <img src="images/empty-cup.png" alt="empty-cup">
@@ -139,7 +139,7 @@ const catalog = `
               </div>
           </div>
         </a>
-        <a class = "rating" href="coffee-info.html">
+        <a class = "rating" onclick="onNavigate('/details')">
           <div class="catalog-item">
               <div class="coffee-image">
                 <img src="images/empty-cup.png" alt="empty-cup">
@@ -157,7 +157,7 @@ const catalog = `
               </div>
           </div>
         </a>
-        <a class = "rating" href="coffee-info.html">
+        <a class = "rating" onclick="onNavigate('/details')">
           <div class="catalog-item">
               <div class="coffee-image">
                 <img src="images/empty-cup.png" alt="empty-cup">
@@ -175,7 +175,7 @@ const catalog = `
               </div>
           </div>
         </a>
-        <a class = "rating" href="coffee-info.html">
+        <a class = "rating" onclick="onNavigate('/details')">
           <div class="catalog-item">
               <div class="coffee-image">
                 <img src="images/empty-cup.png" alt="empty-cup">
@@ -193,7 +193,7 @@ const catalog = `
               </div>
           </div>
         </a>
-        <a class = "rating" href="coffee-info.html">
+        <a class = "rating" onclick="onNavigate('/details')">
           <div class="catalog-item">
               <div class="coffee-image">
                 <img src="images/empty-cup.png" alt="empty-cup">

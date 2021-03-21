@@ -1,0 +1,350 @@
+main {
+    width: 60%;
+    padding-top: 150px;
+    margin: 0 auto;
+    min-width: 600px;
+}
+  
+.main-div {
+    display: flex;
+    height: 320px;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #bd9d8383;
+    border-radius: 50px;
+}
+  
+.coffee-img {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #ffe9d6ce;
+    border-radius: 50px;
+    border: 3px solid  #624c3a;
+}
+  
+.coffee-image {
+    height: 150px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    position: relative;
+}
+  
+.coffee-image img {
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+  
+.coffee-ingredient {
+    position: absolute;
+    left: 6px;
+    top: 0;
+    height: 143px;
+    width: 109px;
+}
+  
+.ingredient1 {
+    clip-path: polygon(0 20%, 100% 20%, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 20%, 100% 20%, 100% 100%, 0% 100%);
+}
+  
+.ingredient2 {
+    clip-path: polygon(0 45%, 100% 45%, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 45%, 100% 45%, 100% 100%, 0% 100%);
+}
+  
+.ingredient3 {
+    clip-path: polygon(0 70%, 100% 70%, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 70%, 100% 70%, 100% 100%, 0% 100%);
+}
+  
+.coffee-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1.5em;
+}
+
+.coffee-desc {
+    height: 100%;
+    width: 60%;
+    padding: 30px;
+    font-size: 1.3em;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.coffee-desc p {
+    font-size: 1.1em;
+}
+  
+ul {
+    list-style: none;
+}
+
+.ingredients {
+    margin-top: 20px;
+}
+  
+.ingredients li {
+    margin-bottom: 5px;
+}
+
+.ingedient-value,
+.ingedient-name{
+    font-size: 0.9em;
+}
+  
+.details {
+    margin-bottom: 0px;
+    margin-top: auto;
+}
+  
+.details p {
+    margin-top: 5px;
+}
+
+.coffee-description {
+    border-radius: 20px;
+    padding: 20px 50px;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: #ffe9d6ce;
+    border: 3px solid  #624c3a;
+}
+
+.comments-section {
+    margin-top: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    min-width: 600px;
+}
+  
+.comments-section form {
+    width: 100%;
+}
+  
+.comments-section textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    resize: none;
+    font-size: 1em;
+    border-radius: 20px;
+}
+  
+.comments-section input {
+    display: block;
+    margin: 0 0 0 auto;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 10px;
+    border-color: #4d3e32;
+    background-color:  #ffe9d6ce;
+    color: #4d3e32;
+}
+  
+.comment-beauty {
+    margin-top: 20px;
+    width: 100%;
+}
+  
+.comment {
+    background-color: #ecd7c3;
+    border-radius: 20px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.comment-left {
+    width: 30%;
+    box-sizing: border-box;
+}
+  
+.comment-left p {
+    margin-bottom: 5px;
+}
+
+.comment-left, .comment-text{
+    display: inline-block;
+    text-align: left;
+}
+  
+.comment-mess {
+    width: 70%;
+    box-sizing: border-box;
+}
+  
+.star-rating {
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: auto;
+    text-align: center;
+    background-color: #ffac26;
+  }
+  
+.star-rating-icon {
+      float: right;
+      padding-left: 2px;
+      cursor: pointer;
+}
+  
+.star-rating-icon:last-child {
+      padding-left: 0;
+}
+  
+.star-rating-input {
+      display: none;
+}
+
+.star-rating-icon:hover:before,
+.star-rating-icon:hover ~ .star-rating-icon:before,
+.star-rating-input:checked ~ .star-rating-icon:before {
+      color: yellow;
+}
+
+  @media only screen
+      and (max-device-width : 500px)
+      and (orientation: portrait) {
+  
+      :root {
+        --main-border-radius: 50px;
+      }
+  
+      main {
+        padding-top: 200px;
+        width: 80%;
+      }
+  
+      .main-div {
+        flex-direction: column;
+        height: auto;
+      }
+  
+      .coffee-img {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        border-radius: var(--main-border-radius);
+        margin-bottom: 50px;
+      }
+  
+      .coffee-desc {
+        width: 100%;
+      }
+  
+      .coffee-image {
+        margin-left: 40px;
+        margin-bottom: 20px;
+        margin-top: 40px;
+        height: 300px;
+      }
+  
+      .coffee-ingredient {
+        position: absolute;
+        left: 12px;
+        top: 0;
+        height: 285px;
+        width: 219px;
+      }
+  
+      .coffee-name {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 4em;
+        margin-bottom: 30px;
+      }
+  
+      .star-rating {
+        border-radius: 50px;
+        font-size: 3em;
+        margin-bottom: 20px;
+        padding: 25px;
+      }
+  
+      .star-rating-icon {
+          padding-left: 10px;
+      }
+  
+      .coffee-details {
+        padding: 30px;
+        font-size: 3em;
+      }
+  
+      .coffee-desc p {
+        font-size: 2.3em;
+      }
+      
+      .ingedient-value,
+      .ingedient-name{
+       font-size: 2em;
+      }
+
+      .ingredients {
+        margin: 50px;
+      }
+  
+      .ingredients li {
+        margin-bottom: 5px;
+      }
+  
+      .coffee-description {
+        margin-top: 50px;
+        padding: 30px 50px;
+        font-size: 2.5em;
+      }
+  
+      .comments-section {
+        margin-top: 50px;
+        padding: 40px;
+      }
+  
+      .comments-section textarea {
+        margin-bottom: 30px;
+        padding: 30px;
+        font-size: 2.5em;
+      }
+  
+      .comments-section input{
+        padding: 10px 20px;
+        font-size: 2.5em;
+      }
+  
+      .comment-beauty {
+        margin-bottom: 30px;
+      }
+  
+      .comment {
+        padding: 30px;
+        font-size: 2.5em;
+      }
+  
+      .comment-left {
+        width: 40%;
+        box-sizing: border-box;
+      }
+  
+      .comment-left p {
+        margin-bottom: 5px;
+      }
+  
+      .comment-mess {
+        width: 60%;
+        box-sizing: border-box;
+      }
+  }
+  

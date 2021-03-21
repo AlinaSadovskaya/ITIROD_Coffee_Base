@@ -3,6 +3,7 @@ const routes = {
     '/register': register,
     '/catalog': catalog,
     '/create': create,
+    '/details': details,
     '/': catalog
 };
 

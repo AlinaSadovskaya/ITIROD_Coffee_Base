@@ -259,29 +259,7 @@
 .beads li:hover:before {background: #FFCE08;}
 
 
-/*rating*/
 
-.grid-item-rating {
-  background-color: #FBB03B;
-  border-radius: 15px;
-  padding: 7px;
-  margin-bottom: 5px;
-  margin-top: auto;
-  text-align: center;
-}
-
-.fa-star {
-  color: white;
-}
-
-.checked {
-  color: #FFFF00;
-}
-
-.rating{
-  color: white;
-  text-decoration: none;
-}
 /* FOR SMARTPHONES */
 @media only screen
     and (max-device-width : 500px)
