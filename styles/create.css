@@ -37,6 +37,7 @@ main {
 
 input {
     padding: 5px;
+    background-color: var(--color-input);
 }
 
 label {
@@ -107,6 +108,7 @@ label {
     width: 100%;
     box-sizing: border-box;
     margin-bottom: 5px;
+    background-color: var(--color-input);
 }
 
 .ingredients-select {
@@ -117,6 +119,7 @@ label {
     text-align: center;
     padding-left: 10px;
     border-radius: 10px;
+    background-color: var(--color-input);
 }
   
 .input_value {
@@ -225,12 +228,14 @@ label {
       .remove-ingredient {
         width: 70px;
         height: 70px;
+        background-color: var(--color-input);
       }
   
       #add-ingredient {
         width: 100px;
         height: 100px;
         font-size: 2.5em;
+        background-color: var(--color-input);
       }
   
       #description {

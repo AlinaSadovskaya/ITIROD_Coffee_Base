@@ -1,7 +1,7 @@
 /*header*/
 
 body {
-  background-color: #ddb49256;
+  background-color: var(--color-back);
 }
 
 header {
@@ -10,7 +10,7 @@ header {
   width: 100%;
   box-sizing: border-box;
   background-color: #624c3a;
-  color: white;
+  color: var(--color-input);
   padding: 15px 50px;
   min-width: 650px;
   display: flex;
@@ -45,6 +45,7 @@ header .header-search input {
   font-size: 1em;
   outline: none;
   padding-left: 5px;
+  background-color: var(--color-input);
 }
 
 header .header-search button {
@@ -53,7 +54,7 @@ header .header-search button {
   height: 35px;
   border-radius: 50%;
   border: none;
-  background-color: white;
+  background-color: var(--color-input);
   font-size: 1em;
   cursor: pointer;
 }
@@ -305,7 +306,7 @@ footer .contacts .mail-link:hover {
 }
 
 .rating{
-  color: white;
+  color: var(--color-input);
   text-decoration: none;
 }
 
@@ -424,6 +425,18 @@ footer .contacts .mail-link:hover {
     footer .copyright{
       font-size: 1.2em;
     }
+}
+
+:root {
+  --color-back: #ddb49256;
+  --color-input: #f1f1f1;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-back: #5c483856;
+    --color-input: #dbc5b3;
+  }
 }
 
 

@@ -20,7 +20,7 @@ main form {
 }
   
 main label{
-      color:white;
+      color: var(--color-input);
 }
 
 main form input {
@@ -30,6 +30,7 @@ main form input {
     padding: 5px;
     margin-bottom: 20px;
     margin-top: 5px;
+    background-color: var(--color-input);
 }
   
 main form button {
@@ -39,7 +40,7 @@ main form button {
     padding: 5px;
     background-color:#3f2714ce;
     border-radius: 30px;
-    color: white;
+    color: var(--color-input);
 }
   
 @media only screen

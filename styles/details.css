@@ -317,6 +317,7 @@ ul {
         margin-bottom: 30px;
         padding: 30px;
         font-size: 2.5em;
+        background-color: var(--color-input);
       }
   
       .comments-section input{
