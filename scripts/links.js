@@ -4,6 +4,7 @@ const routes = {
     '/catalog': catalog,
     '/create': create,
     '/details': details,
+    '/404': error404,
     '/': catalog
 };
 
@@ -35,6 +36,9 @@ async function addContent(pathname) {
         if (pathname in scripts) {
             addScript(pathname);
         }
+    }
+    else {
+        onNavigate('/404');
     }
 }
 
