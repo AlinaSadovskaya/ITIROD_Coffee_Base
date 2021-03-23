@@ -1,4 +1,5 @@
 const catalog = `
+
 <link rel="stylesheet" href="styles/catalog.css">
 <link rel="stylesheet" href="styles/ingredients.css">
 <input type="checkbox" id="side-checkbox" />
@@ -31,203 +32,180 @@ const catalog = `
             </label>
         </div>
         <section class="catalog-grid">
+        
         <a class = "rating" onclick="onNavigate('/details')">
-            <div class="catalog-item">
-                <div class="coffee-image">
-                  <picture>
-                    <img src="images/empty-cup.png" alt="empty-cup">
-                  </picture>
-                  <div class="coffee-ingredient ingredient1 syrup"></div>
-                  <div class="coffee-ingredient ingredient2 milk"></div>
-                  <div class="coffee-ingredient ingredient3 espresso"></div>
-                </div>
-                <p class="coffee-title">CAPPUCCINO</p>
+          <div class="box">
+              <div class="image-box">
+                <picture>
+                  <img src="images/empty-cup.png" alt="empty-cup">
+                </picture>
+                <div class="coffee-ingredient_n ingredient1 red-syrup"></div>
+                <div class="coffee-ingredient_n ingredient2 milk"></div>
+                <div class="coffee-ingredient_n ingredient3 espresso"></div>
+              </div>
+              <div class="details">
+                <p class="coffee-title">CORDATO</p>
                 <div class="grid-item-rating">
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
                 </div>
-            </div>
-          </a>
-        <a class = "rating" onclick="onNavigate('/details')">
-          <div class="catalog-item">
-              <div class="coffee-image">
-                <picture>
-                  <img src="images/empty-cup.png" alt="empty-cup">
-                </picture>
-                <div class="coffee-ingredient ingredient1 syrup"></div>
-                <div class="coffee-ingredient ingredient2 milk"></div>
-                <div class="coffee-ingredient ingredient3 espresso"></div>
-              </div>
-              <p class="coffee-title">LATTE</p>
-              <div class="grid-item-rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
               </div>
           </div>
         </a>
         <a class = "rating" onclick="onNavigate('/details')">
-          <div class="catalog-item">
-              <div class="coffee-image">
+          <div class="box">
+              <div class="image-box">
                 <picture>
                   <img src="images/empty-cup.png" alt="empty-cup">
                 </picture>
-                <div class="coffee-ingredient ingredient1 syrup"></div>
-                <div class="coffee-ingredient ingredient2 milk"></div>
-                <div class="coffee-ingredient ingredient3 espresso"></div>
+                <div class="coffee-ingredient_n ingredient1 syrup"></div>
+                <div class="coffee-ingredient_n ingredient2 milk"></div>
+                <div class="coffee-ingredient_n ingredient3 espresso"></div>
               </div>
-              <p class="coffee-title">AMERICANO</p>
-              <div class="grid-item-rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
+              <div class="details">
+                <p class="coffee-title">LATTE</p>
+                <div class="grid-item-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
               </div>
           </div>
         </a>
         <a class = "rating" onclick="onNavigate('/details')">
-          <div class="catalog-item">
-              <div class="coffee-image">
+          <div class="box">
+              <div class="image-box">
                 <picture>
                   <img src="images/empty-cup.png" alt="empty-cup">
                 </picture>
-                <div class="coffee-ingredient ingredient1 red-syrup"></div>
-                <div class="coffee-ingredient ingredient2 milk"></div>
-                <div class="coffee-ingredient ingredient3 espresso"></div>
+                <div class="coffee-ingredient_n ingredient1 red-syrup"></div>
+                <div class="coffee-ingredient_n ingredient2 milk"></div>
+                <div class="coffee-ingredient_n ingredient3 espresso"></div>
               </div>
-              <p class="coffee-title">MACCHIATO</p>
-              <div class="grid-item-rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
+              <div class="details">
+                <p class="coffee-title">CORDATO</p>
+                <div class="grid-item-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
               </div>
           </div>
         </a>
         <a class = "rating" onclick="onNavigate('/details')">
-          <div class="catalog-item">
-              <div class="coffee-image">
+          <div class="box">
+              <div class="image-box">
                 <picture>
                   <img src="images/empty-cup.png" alt="empty-cup">
                 </picture>
-                <div class="coffee-ingredient ingredient1 red-syrup"></div>
-                <div class="coffee-ingredient ingredient2 milk"></div>
-                <div class="coffee-ingredient ingredient3 espresso"></div>
+                <div class="coffee-ingredient_n ingredient1 red-syrup"></div>
+                <div class="coffee-ingredient_n ingredient2 milk"></div>
+                <div class="coffee-ingredient_n ingredient3 espresso"></div>
               </div>
-              <p class="coffee-title">CORDATO</p>
-              <div class="grid-item-rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
+              <div class="details">
+                <p class="coffee-title">CORDATO</p>
+                <div class="grid-item-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
               </div>
           </div>
         </a>
         <a class = "rating" onclick="onNavigate('/details')">
-          <div class="catalog-item">
-              <div class="coffee-image">
+          <div class="box">
+              <div class="image-box">
                 <picture>
                   <img src="images/empty-cup.png" alt="empty-cup">
                 </picture>
-                <div class="coffee-ingredient ingredient1 syrup"></div>
-                <div class="coffee-ingredient ingredient2 milk"></div>
-                <div class="coffee-ingredient ingredient3 espresso"></div>
+                <div class="coffee-ingredient_n ingredient1 red-syrup"></div>
+                <div class="coffee-ingredient_n ingredient2 milk"></div>
+                <div class="coffee-ingredient_n ingredient3 espresso"></div>
               </div>
-              <p class="coffee-title">CAPPUCCINO</p>
-              <div class="grid-item-rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
+              <div class="details">
+                <p class="coffee-title">CORDATO</p>
+                <div class="grid-item-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
               </div>
           </div>
         </a>
         <a class = "rating" onclick="onNavigate('/details')">
-          <div class="catalog-item">
-              <div class="coffee-image">
+          <div class="box">
+              <div class="image-box">
                 <picture>
                   <img src="images/empty-cup.png" alt="empty-cup">
                 </picture>
-                <div class="coffee-ingredient ingredient1 syrup"></div>
-                <div class="coffee-ingredient ingredient2 milk"></div>
-                <div class="coffee-ingredient ingredient3 espresso"></div>
+                <div class="coffee-ingredient_n ingredient1 red-syrup"></div>
+                <div class="coffee-ingredient_n ingredient2 milk"></div>
+                <div class="coffee-ingredient_n ingredient3 espresso"></div>
               </div>
-              <p class="coffee-title">LATTE</p>
-              <div class="grid-item-rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
+              <div class="details">
+                <p class="coffee-title">CORDATO</p>
+                <div class="grid-item-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
               </div>
           </div>
         </a>
         <a class = "rating" onclick="onNavigate('/details')">
-          <div class="catalog-item">
-              <div class="coffee-image">
+          <div class="box">
+              <div class="image-box">
                 <picture>
                   <img src="images/empty-cup.png" alt="empty-cup">
                 </picture>
-                <div class="coffee-ingredient ingredient1 syrup"></div>
-                <div class="coffee-ingredient ingredient2 milk"></div>
-                <div class="coffee-ingredient ingredient3 espresso"></div>
+                <div class="coffee-ingredient_n ingredient1 syrup"></div>
+                <div class="coffee-ingredient_n ingredient2 milk"></div>
+                <div class="coffee-ingredient_n ingredient3 espresso"></div>
               </div>
-              <p class="coffee-title">AMERICANO</p>
-              <div class="grid-item-rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
+              <div class="details">
+                <p class="coffee-title">LATTE</p>
+                <div class="grid-item-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
               </div>
           </div>
         </a>
         <a class = "rating" onclick="onNavigate('/details')">
-          <div class="catalog-item">
-              <div class="coffee-image">
+          <div class="box">
+              <div class="image-box">
                 <picture>
                   <img src="images/empty-cup.png" alt="empty-cup">
                 </picture>
-                <div class="coffee-ingredient ingredient1 red-syrup"></div>
-                <div class="coffee-ingredient ingredient2 milk"></div>
-                <div class="coffee-ingredient ingredient3 espresso"></div>
+                <div class="coffee-ingredient_n ingredient1 syrup"></div>
+                <div class="coffee-ingredient_n ingredient2 milk"></div>
+                <div class="coffee-ingredient_n ingredient3 espresso"></div>
               </div>
-              <p class="coffee-title">MACCHIATO</p>
-              <div class="grid-item-rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-              </div>
-          </div>
-        </a>
-        <a class = "rating" onclick="onNavigate('/details')">
-          <div class="catalog-item">
-              <div class="coffee-image">
-                <picture>
-                  <img src="images/empty-cup.png" alt="empty-cup">
-                </picture>
-                <div class="coffee-ingredient ingredient1 red-syrup"></div>
-                <div class="coffee-ingredient ingredient2 milk"></div>
-                <div class="coffee-ingredient ingredient3 espresso"></div>
-              </div>
-              <p class="coffee-title">CORDATO</p>
-              <div class="grid-item-rating">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
+              <div class="details">
+                <p class="coffee-title">LATTE</p>
+                <div class="grid-item-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
               </div>
           </div>
         </a>
