@@ -450,3 +450,37 @@ footer .contacts .mail-link:hover {
   text-align: center;
   font-size: 3.2em;
 }
+
+/*скролл прокрутки*/
+::-webkit-scrollbar-button {
+  background-image:url('');
+  background-repeat:no-repeat;
+  width:5px;
+  height:0px
+}
+  
+::-webkit-scrollbar-track {
+  background-color:#ecedee
+}
+  
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 2px;
+  border-radius: 10px;
+  background-color:#3f2714ce;
+}
+  
+::-webkit-scrollbar-thumb:hover{
+  background-color:#c98a16;
+}
+  
+::-webkit-resizer{
+  background-image:url('');
+  background-repeat:no-repeat;
+  width:4px;
+  height:4px
+}
+  
+::-webkit-scrollbar{
+  width: 6px;
+}
+/*end*/
