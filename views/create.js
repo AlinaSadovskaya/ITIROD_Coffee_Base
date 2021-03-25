@@ -8,7 +8,9 @@ const create = `
           <div class="coffee-round-image">
             <div class="coffee-left-div">
                 <div class="coffee-image">
-                <img src="images/empty-cup.png" alt="empty-cup">
+                  <picture>
+                    <img src="images/empty-cup.png" alt="empty-cup">
+                  </picture>
                 </div>
             </div>
           </div>

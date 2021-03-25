@@ -5,7 +5,9 @@ const details = `
    
         <div class="coffee-img">
             <div class="coffee-image">
-                <img src="images/empty-cup.png" alt="empty-cup">
+                <picture>
+                    <img src="images/empty-cup.png" alt="empty-cup">
+                </picture>
                 <div class="coffee-ingredient ingredient1 syrup"></div>
                 <div class="coffee-ingredient ingredient2 milk"></div>
                 <div class="coffee-ingredient ingredient3 espresso"></div>
