@@ -348,13 +348,14 @@
 
     .side-button-1-wr {
       top: 120px;
+      width: 50%;
     }
 
     .side-button-1 .side-b{
-      font-size: 30px;
+      font-size: 42px;
       padding: 20px 50px;
       padding-left: 10px;
-      max-width: 100px;
+      max-width: 150px;
     }
 
     .side-panel {
