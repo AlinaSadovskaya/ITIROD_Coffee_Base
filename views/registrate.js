@@ -2,7 +2,7 @@ const register = `
 <script src="scripts/registrate.js"></script>
 <link rel="stylesheet" href="styles/registrate.css">
 <section class="register-section">
-  <form class="register-form" onsubmit="submitSignUpForm(); return false;">
+  <form class="register-form" onsubmit="SignUpForm(); return false;">
     <label for="login-input">EMAIL</label>
     <input id="login-input" type="text" name="" value="" required>
     <label for="login-input">PASSWORD</label>
