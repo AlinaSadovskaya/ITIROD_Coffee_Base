@@ -26,6 +26,10 @@ class My_db {
             Date: coffeeDrink.Date.toISOString().slice(0, 10) + ' ' + coffeeDrink.Date.toTimeString().slice(0, 8)
         })
     }
+
+    async getCoffeeDrink(id) {
+        return (await this.database.ref('drinks/' + id).once('value')).val();
+    }
 }
 
 let db = new My_db();
