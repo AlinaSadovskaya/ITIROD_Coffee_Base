@@ -39,13 +39,14 @@ function getItemCatalog(coffee) {
     let ratingDiv = document.createElement("div");
     ratingDiv.classList.add('grid-item-rating');
     let mark;
-    if ('marks' in coffee) {
-        let all_marks = Object.values(coffee.marks);
+
+    if ('stars' in coffee.value) {
+        let all_marks = Object.values(coffee.value.stars);
         if (all_marks.length == 0) {
             mark = 0;
         }
         else {
-            mark = all_marks.reduce((a, b) => (a + b)) / marks.length;
+            mark = all_marks.reduce((a, b) => (a + b)) / all_marks.length;
         }
     }
 
