@@ -31,7 +31,7 @@ main {
 }
 
   
-.coffee-image-details {
+.image-box {
     height: 150px;
     margin-left: 25px;
     margin-bottom: 25px;
@@ -39,13 +39,13 @@ main {
     position: relative;
 }
   
-.coffee-image-details img {
+.image-box img {
     height: 100%;
     position: relative;
     z-index: 1;
 }
   
-.coffee-ingredient {
+.coffee-ingredient_n {
     position: absolute;
     left: 6px;
     top: 0;
@@ -129,12 +129,13 @@ main {
 .ingredients{
   list-style: none;
   padding: 0;
+  max-height: 140px;
+  overflow-y: scroll;
 }
 
 .ingredients li {
   margin-left: 100px;
-  padding: 7px 20px;
-  margin-bottom: 10px;
+  padding: 4px 20px;
   border-radius: 5px;
   background-color: #fde8d7;
   border-left: 10px solid #624c3a; 
@@ -146,9 +147,14 @@ main {
   transition: 0.3s all linear;
 }
 
+.ingredients li:not(:last-child)
+{
+  margin-bottom: 10px;
+}
+
 .ingedient-value,
 .ingedient-name{
-    font-size: 0.9em;
+    font-size: 0.7em;
 }
   
 .details {
@@ -205,9 +211,14 @@ main {
 }
   
 .comment-beauty {
-    margin-top: 20px;
     width: 100%;
 }
+
+.comment-beauty:not(:first-child)
+{
+  margin-top: 20px;
+}
+
   
 .comment {
     background-color: #ecd7c3;
@@ -296,14 +307,14 @@ main {
         width: 100%;
       }
   
-      .coffee-image-details {
+      .image-box {
         margin-left: 40px;
         margin-bottom: 20px;
         margin-top: 40px;
         height: 300px;
       }
   
-      .coffee-ingredient {
+      .coffee-ingredient_n {
         position: absolute;
         left: 12px;
         top: 0;
@@ -350,6 +361,10 @@ main {
       .ingedient-value,
       .ingedient-name{
        font-size: 2em;
+      }
+
+      .ingredients{
+        max-height: 250px;
       }
 
       .ingredients li {

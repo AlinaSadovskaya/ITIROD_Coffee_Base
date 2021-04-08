@@ -30,6 +30,14 @@ class My_db {
     async getCoffeeDrink(id) {
         return (await this.database.ref('drinks/' + id).once('value')).val();
     }
+
+    setStar(coffeeDrinkId, userId, mark) {
+        this.database.ref(`drinks/${coffeeDrinkId}/stars/${userId}`).set(+mark);
+    }
+
+    async getStarByUser(coffeeDrinkId, userId) {
+        return (await this.database.ref(`drinks/${coffeeDrinkId}/stars/${userId}`).once('value')).val();
+    }
 }
 
 let db = new My_db();

@@ -31,11 +31,13 @@ class AuthLogic {
       onNavigate('/');
     });
   }
+
+
 }
 
 const startAuth = new Promise(resolve => {
   firebase.auth().onAuthStateChanged(user => {
-    this.user = user;
+    my_auth.user = user;
     if (user) {
       renameLogout();
     } else {
