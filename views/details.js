@@ -3,8 +3,8 @@ const details = `
 <link rel="stylesheet" href="styles/ingredients.css">
 <article class="coffee-info">
    
-        <div class="coffee-img">
-            <div class="coffee-image">
+        <div class="coffee-img-details">
+            <div class="coffee-image-details">
                 <picture>
                     <img src="images/empty-cup.png" alt="empty-cup">
                 </picture>
@@ -12,7 +12,7 @@ const details = `
                 <div class="coffee-ingredient ingredient2 milk"></div>
                 <div class="coffee-ingredient ingredient3 espresso"></div>
             </div>
-            <p class="coffee-name">LATTE</p>
+            <p class="coffee-name-details">LATTE</p>
             <div class="star-rating">
                 <input class="star-rating-input" id="star-rating-5" type="radio" name="rating" value="5">
                 <label class="star-rating-icon fa fa-star" for="star-rating-5"></label>
@@ -30,7 +30,7 @@ const details = `
             <div class="main-div">
                 
                 <div class="coffee-desc">
-                    <p>STANDARD VALUE: <span class="coffee-value">180</span> ml.</p>
+                    <p>STANDARD VALUE: <span class="coffee-value-details">180</span> ml.</p>
                     <p>AVERAGE MARK: <span class="average-mark">5</span></p>
                     <p>ADDED BY: <span class="coffee-author">ALINA</span></p>
                 </div>
@@ -46,9 +46,7 @@ const details = `
                 </div>
                 
             </div>
-            <p class="coffee-description">
-                A coffee drink originally from Italy, consisting of milk and espresso coffee. It is brewed on the basis
-                of milk, forming a three-layer mixture of coffee, milk and foam in a cup or glass.
+            <p class="coffee-description-details">
             </p>
         </div>
 </article>

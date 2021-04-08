@@ -18,7 +18,7 @@ function getItemCatalog(coffee) {
     let coffeeNode = document.createElement("a");
     coffeeNode.setAttribute('href', '#');
     coffeeNode.classList.add('rating');
-    coffeeNode.setAttribute('onclick', `onNavigate('/coffee-info?id=${coffee.id}'); return false;`);
+    coffeeNode.setAttribute('onclick', `onNavigate('/details?id=${coffee.id}'); return false;`);
 
     let coffeeItemDiv = document.createElement("div");
     coffeeItemDiv.classList.add('box');

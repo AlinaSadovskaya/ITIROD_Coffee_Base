@@ -10,7 +10,7 @@ main {
   margin: 0 auto 0;
 }
 
-.coffee-img {
+.coffee-img-details {
     transition: 0.3s all linear;
     position: relative;
     display: inline-block;
@@ -31,7 +31,7 @@ main {
 }
 
   
-.coffee-image {
+.coffee-image-details {
     height: 150px;
     margin-left: 25px;
     margin-bottom: 25px;
@@ -39,7 +39,7 @@ main {
     position: relative;
 }
   
-.coffee-image img {
+.coffee-image-details img {
     height: 100%;
     position: relative;
     z-index: 1;
@@ -68,7 +68,7 @@ main {
     -webkit-clip-path: polygon(0 70%, 100% 70%, 100% 100%, 0% 100%);
 }
   
-.coffee-name {
+.coffee-name-details {
     overflow: hidden;
     text-overflow: ellipsis;
     font-size: 1.5em;
@@ -160,7 +160,7 @@ main {
     margin-top: 5px;
 }
 
-.coffee-description {
+.coffee-description-details {
     border-radius: 20px;
     padding: 20px 50px;
     text-align: center;
@@ -284,7 +284,7 @@ main {
         height: auto;
       }
   
-      .coffee-img {
+      .coffee-img-details {
         width: 100%;
         height: auto;
         margin: auto;
@@ -296,7 +296,7 @@ main {
         width: 100%;
       }
   
-      .coffee-image {
+      .coffee-image-details {
         margin-left: 40px;
         margin-bottom: 20px;
         margin-top: 40px;
@@ -311,7 +311,7 @@ main {
         width: 219px;
       }
   
-      .coffee-name {
+      .coffee-name-details {
         overflow: hidden;
         text-overflow: ellipsis;
         font-size: 4em;
@@ -358,7 +358,7 @@ main {
         margin-right: 10px;
       }
   
-      .coffee-description {
+      .coffee-description-details {
         margin-top: 50px;
         padding: 30px 50px;
         font-size: 2.5em;
