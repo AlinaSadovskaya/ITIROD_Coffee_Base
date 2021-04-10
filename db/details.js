@@ -14,28 +14,7 @@ async function createDetailsPage() {
         setImageDiv(CoffeeDrink);
         setIngredients(CoffeeDrink);
         showComments(CoffeeDrink);
-
-        let mark = 0;
-        if (CoffeeDrink.stars) {
-
-            let stars = Object.values(CoffeeDrink.stars);
-            if (stars.length != 0) {
-                mark = stars.reduce((a, b) => (a + b)) / stars.length;
-            }
-
-            document.querySelector('.average-mark').textContent = mark.toFixed(2);
-
-            if (await my_auth.isAuthenticated()) {
-                let mark_by_user = await db.getStarByUser(getURLParam('id'), my_auth.user.uid);
-
-                //    console.log(mark_by_user);
-
-                if (mark_by_user) {
-                    let input = document.getElementsByClassName('star-rating-input');
-                    input[5 - mark_by_user].checked = true;
-                }
-            }
-        }
+        setStars(CoffeeDrink);
     }
 }
 
@@ -142,6 +121,30 @@ function showComments(CoffeeDrink) {
 
                 commentItem.appendChild(commentDiv);
                 commentsList.prepend(commentItem);
+            }
+        }
+    }
+}
+
+async function setStars(CoffeeDrink) {
+    let mark = 0;
+    if (CoffeeDrink.stars) {
+
+        let stars = Object.values(CoffeeDrink.stars);
+        if (stars.length != 0) {
+            mark = stars.reduce((a, b) => (a + b)) / stars.length;
+        }
+
+        document.querySelector('.average-mark').textContent = mark.toFixed(2);
+
+        if (await my_auth.isAuthenticated()) {
+            let mark_by_user = await db.getStarByUser(getURLParam('id'), my_auth.user.uid);
+
+            //    console.log(mark_by_user);
+
+            if (mark_by_user) {
+                let input = document.getElementsByClassName('star-rating-input');
+                input[5 - mark_by_user].checked = true;
             }
         }
     }
