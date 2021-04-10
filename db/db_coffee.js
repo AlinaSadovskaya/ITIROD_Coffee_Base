@@ -38,6 +38,14 @@ class My_db {
     async getStarByUser(coffeeDrinkId, userId) {
         return (await this.database.ref(`drinks/${coffeeDrinkId}/stars/${userId}`).once('value')).val();
     }
+
+    addComment(coffeeDrinkId, comment) {
+        this.database.ref(`drinks/${coffeeDrinkId}/comments/`).push({
+            login: comment.login,
+            comment: comment.comment,
+            date: comment.date.toISOString().slice(0, 10) + ' ' + comment.date.toTimeString().slice(0, 8)
+        })
+    }
 }
 
 let db = new My_db();

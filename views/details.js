@@ -4,7 +4,7 @@ const details = `
 <article class="coffee-info">
    
         <div class="coffee-img-details">
-            <p class="coffee-name-details">LATTE</p>
+            <p class="coffee-name-details"></p>
             <div class="star-rating">
                 <input class="star-rating-input" id="star-rating-5" type="radio" name="rating" value="5" onclick="setStar(this);">
                 <label class="star-rating-icon fa fa-star" for="star-rating-5"></label>
@@ -37,39 +37,12 @@ const details = `
         </div>
 </article>
 <section class="comments-section">
-    <form class="comment-send" action="#" method="post">
-        <textarea name="comment" rows="3" placeholder="LEAVE YOUR COMMENT HERE..."></textarea>
+    <form class="comment-send" onsubmit="addComment(); return false;" method="post">
+        <textarea name="comment" id="comment-area" rows="3" placeholder="LEAVE YOUR COMMENT HERE..."></textarea>
         <input type="submit" name="send" value="SEND">
     </form>
     <ul class="comments">
-        <li class="comment-beauty">
-            <div class="comment">
-                <div class="comment-left">
-                    <p class="comment-author">Alina</p>
-                    <time>21.03.2021</time>
-                </div>
-                <p class="comment-text">My favourite coffee drink!</p>
-            </div>
-        </li>
-        <li class="comment-beauty">
-            <div class="comment">
-                <div class="comment-left">
-                    <p class="comment-author">Kostya</p>
-                    <time>22.03.2021</time>
-                </div>
-                <p class="comment-text">Like this coffee so much)</p>
-            </div>
-        </li>
-        <li class="comment-beauty">
-            <div class="comment">
-                <div class="comment-left">
-                    <p class="comment-author">Polina</p>
-                    <time>23.03.2021</time>
-                </div>
-                <p class="comment-text">I love it with a lot of milk added!</p>
-            </div>
-        </li>
-
+        
     </ul>
 </section>
 `

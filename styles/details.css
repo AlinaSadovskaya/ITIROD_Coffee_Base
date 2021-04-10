@@ -121,16 +121,17 @@ main {
 
 .comments{
   list-style: none;
-  height:200px;
-  overflow-y: scroll;
+  max-height:200px;
+  overflow-y: auto;
   margin-top: 20px;
+  overflow-x: hidden;
 }
 
 .ingredients{
   list-style: none;
   padding: 0;
   max-height: 140px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .ingredients li {
@@ -230,8 +231,10 @@ main {
 }
 
 .comment-left {
-    width: 30%;
+    word-wrap: break-word;
+    width: 38%;
     box-sizing: border-box;
+    margin-right: 20px;
 }
   
 .comment-left p {
@@ -243,6 +246,11 @@ main {
     text-align: left;
 }
   
+.comment-text{
+  word-wrap: break-word;
+  max-width: 60%;
+}
+
 .comment-mess {
     width: 70%;
     box-sizing: border-box;
@@ -404,9 +412,12 @@ main {
         padding: 30px;
         font-size: 2.5em;
       }
-  
+    
+      .comment-text{
+        max-width: 60%;
+      }
       .comment-left {
-        width: 40%;
+        min-width: 40%;
         box-sizing: border-box;
       }
   
@@ -420,7 +431,8 @@ main {
       }
 
       .comments{
-        height:400px;
+        max-height:600px;
       }
+      
   }
   

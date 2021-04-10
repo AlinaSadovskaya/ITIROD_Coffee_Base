@@ -13,23 +13,27 @@ async function createDetailsPage() {
         document.querySelector('.coffee-description-details').textContent = CoffeeDrink.desc;
         setImageDiv(CoffeeDrink);
         setIngredients(CoffeeDrink);
+        showComments(CoffeeDrink);
 
         let mark = 0;
-        let stars = Object.values(CoffeeDrink.stars);
-        if (stars.length != 0) {
-            mark = stars.reduce((a, b) => (a + b)) / stars.length;
-        }
+        if (CoffeeDrink.stars) {
 
-        document.querySelector('.average-mark').textContent = mark.toFixed(2);
+            let stars = Object.values(CoffeeDrink.stars);
+            if (stars.length != 0) {
+                mark = stars.reduce((a, b) => (a + b)) / stars.length;
+            }
 
-        if (await my_auth.isAuthenticated()) {
-            let mark_by_user = await db.getStarByUser(getURLParam('id'), my_auth.user.uid);
+            document.querySelector('.average-mark').textContent = mark.toFixed(2);
 
-            //    console.log(mark_by_user);
+            if (await my_auth.isAuthenticated()) {
+                let mark_by_user = await db.getStarByUser(getURLParam('id'), my_auth.user.uid);
 
-            if (mark_by_user) {
-                let input = document.getElementsByClassName('star-rating-input');
-                input[5 - mark_by_user].checked = true;
+                //    console.log(mark_by_user);
+
+                if (mark_by_user) {
+                    let input = document.getElementsByClassName('star-rating-input');
+                    input[5 - mark_by_user].checked = true;
+                }
             }
         }
     }
@@ -82,5 +86,65 @@ async function setStar(button) {
     document.querySelector('.average-mark').textContent = mark.toFixed(2);
 }
 
+async function addComment() {
+    let flag = await my_auth.isAuthenticated();
+    if (!flag) {
+        alert('Sign up to rate your drinks!');
+        return;
+    }
+    let comment_area = document.getElementById('comment-area');
+    let text = comment_area.value;
+
+    if (text.trim() != "") {
+        comment_area.value = "";
+        let comment = new Comment(my_auth.user.email, text);
+        let coffeeDrinkId = getURLParam('id');
+        db.addComment(coffeeDrinkId, comment);
+        let coffeeDrink = db.getCoffeeDrink(coffeeDrinkId);
+        showComments(coffeeDrink);
+    }
+
+}
+
+
+function showComments(CoffeeDrink) {
+    if (CoffeeDrink.comments) {
+        let comments = Object.values(CoffeeDrink.comments);
+        if (comments.length != 0) {
+            let commentsList = document.querySelector('.comments');
+            commentsList.innerHTML = "";
+            for (let comment of comments) {
+                let commentItem = document.createElement("li");
+                commentItem.classList.add('comment-beauty');
+
+                let commentDiv = document.createElement("div");
+                commentDiv.classList.add('comment');
+
+                let AuthDateInfo = document.createElement("div");
+                AuthDateInfo.classList.add('comment-left');
+
+                let commentAuthor = document.createElement("p");
+                commentAuthor.classList.add('comment-author');
+                commentAuthor.textContent = comment.login;
+                AuthDateInfo.appendChild(commentAuthor);
+
+                let time = document.createElement("time");
+                time.setAttribute('datetime', comment.date);
+                time.textContent = comment.date;
+                AuthDateInfo.appendChild(time);
+
+                let commentText = document.createElement("p");
+                commentText.classList.add('comment-text');
+                commentText.textContent = comment.comment;
+
+                commentDiv.appendChild(AuthDateInfo);
+                commentDiv.appendChild(commentText);
+
+                commentItem.appendChild(commentDiv);
+                commentsList.prepend(commentItem);
+            }
+        }
+    }
+}
 
 createDetailsPage()
