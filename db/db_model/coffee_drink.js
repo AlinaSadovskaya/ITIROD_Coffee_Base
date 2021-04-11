@@ -8,5 +8,6 @@ class CoffeeDrink {
         this.Date = new Date();
         this.comments = [];
         this.stars = [];
+        this.mark = 0;
     }
 }

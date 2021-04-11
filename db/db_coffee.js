@@ -35,6 +35,14 @@ class My_db {
         this.database.ref(`drinks/${coffeeDrinkId}/stars/${userId}`).set(+mark);
     }
 
+    setMark(coffeeDrinkId, userId, mark) {
+        this.database.ref(`drinks/${coffeeDrinkId}/mark/`).set(+mark);
+    }
+
+    async getMark(coffeeDrinkId) {
+        return (await this.database.ref(`drinks/${coffeeDrinkId}/mark/`).once('value')).val();
+    }
+
     async getStarByUser(coffeeDrinkId, userId) {
         return (await this.database.ref(`drinks/${coffeeDrinkId}/stars/${userId}`).once('value')).val();
     }

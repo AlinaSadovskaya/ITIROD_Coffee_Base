@@ -431,6 +431,7 @@ footer .contacts .mail-link:hover {
 :root {
   --color-back: #ddb49256;
   --color-input: #ffffff;
+  --sq-color: #E0926E;
 }
 
 @media (prefers-color-scheme: dark) {

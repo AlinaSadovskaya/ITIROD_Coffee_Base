@@ -39,4 +39,24 @@ function getURLParam(param) {
     return value;
 }
 
+
+function getSortParam(sortOption) {
+    let url = `/catalog?sort=${sortOption}`;
+    let filterOption = getURLParam('filter');
+    if (filterOption != null) {
+        url += `&filter=${filterOption}`;
+    }
+    onNavigate(url);
+}
+
+
+function getFilterParam(filterOption) {
+    let url = `/catalog?filter=${filterOption}`;
+    let sortOption = getURLParam('sort');
+    if (sortOption != null) {
+        url += `&sort=${sortOption}`;
+    }
+    onNavigate(url);
+}
+
 setEventListeners();

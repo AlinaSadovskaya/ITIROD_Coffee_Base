@@ -248,7 +248,7 @@
   
 .beads li:before {
   top: calc(50% - 5px);
-  background: #E0926E;
+  background: var(--sq-color);
   left: -22px;
   width: 10px;
   height: 10px;
@@ -264,7 +264,6 @@
 }
   
 .beads li:hover:before {background: #FFCE08;}
-
 
 
 /* FOR SMARTPHONES */

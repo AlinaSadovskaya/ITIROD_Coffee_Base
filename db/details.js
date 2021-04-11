@@ -14,7 +14,7 @@ async function createDetailsPage() {
         setImageDiv(CoffeeDrink);
         setIngredients(CoffeeDrink);
         showComments(CoffeeDrink);
-        setStars(CoffeeDrink);
+        getStars(CoffeeDrink);
     }
 }
 
@@ -61,6 +61,8 @@ async function setStar(button) {
     if (stars.length != 0) {
         mark = stars.reduce((a, b) => (a + b)) / stars.length;
     }
+
+    db.setMark(CoffeeDrinkId, my_auth.user.uid, mark.toFixed(2));
 
     document.querySelector('.average-mark').textContent = mark.toFixed(2);
 }
@@ -126,16 +128,10 @@ function showComments(CoffeeDrink) {
     }
 }
 
-async function setStars(CoffeeDrink) {
-    let mark = 0;
+async function getStars(CoffeeDrink) {
     if (CoffeeDrink.stars) {
 
-        let stars = Object.values(CoffeeDrink.stars);
-        if (stars.length != 0) {
-            mark = stars.reduce((a, b) => (a + b)) / stars.length;
-        }
-
-        document.querySelector('.average-mark').textContent = mark.toFixed(2);
+        document.querySelector('.average-mark').textContent = CoffeeDrink.mark;
 
         if (await my_auth.isAuthenticated()) {
             let mark_by_user = await db.getStarByUser(getURLParam('id'), my_auth.user.uid);
