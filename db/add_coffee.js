@@ -2,7 +2,7 @@ async function submitForm() {
     let name = document.getElementById('beauty-input-name').value;
     let value = document.getElementById('beauty-input-number').value;
     let description = document.getElementById('description-create').value;
-    let user = 'alinasadovsckaya@yandex.ru';//my_auth.user.email;
+    let user = my_auth.user.email;
     name = name.trim().toLowerCase();
 
     let isInputValid = await checkValue(name, value, description);
