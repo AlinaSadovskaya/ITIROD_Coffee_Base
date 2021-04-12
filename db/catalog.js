@@ -1,5 +1,13 @@
 async function getCatalog() {
-
+    let flag = await my_auth.isAuthenticated();
+    if (!flag) {
+        let createLink = document.getElementById('create-link');
+        createLink.style.display = 'none';
+    }
+    else {
+        let createLink = document.getElementById('create-link');
+        createLink.style.display = 'block';
+    }
     let catalog = await db.getAllDrinks();
 
     let catalogArray = [];
