@@ -12,6 +12,6 @@ async function searchCoffee() {
                 return;
             }
         }
-        alert('A drink with this name was not found( \nYou can create it by going to the "create" tab!');
+        alert('A drink with this name was not found( \nYou can create it by going to the "create" tab! \nP.s. You must be registered to be able to create a drink');
     }
 }

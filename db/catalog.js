@@ -79,14 +79,20 @@ function getItemCatalog(coffee) {
 function filterSortCatalog(catalog, filterOption, sortOption) {
 
     if (filterOption == 'top') {
-        catalog.sort((a, b) => b.value.mark || 0 - a.value.mark || 0);
+        catalog.sort((a, b) => (b.value.mark || 0) - (a.value.mark || 0));
         catalog = catalog.slice(0, 10);
-        catalog.sort((a, b) => b.value.mark || 0 - a.value.mark || 0);
+        catalog.sort((a, b) => (b.value.mark || 0) - (a.value.mark || 0));
     }
 
     switch (sortOption) {
         case 'rating':
-            catalog.sort((a, b) => b.value.mark || 0 - a.value.mark || 0);
+            // catalog.sort(function (a, b) {
+            //     var mark1 = a.value.mark, mark2 = b.value.mark;
+            //     if (!mark1) mark1 = 0;
+            //     if (!mark2) mark2 = 0;
+            //     return mark2 - mark1;
+            // });
+            catalog.sort((a, b) => (b.value.mark || 0) - (a.value.mark || 0));
             break;
         case 'date':
             catalog.sort((a, b) => Date.parse(b.value.Date) - Date.parse(a.value.Date));

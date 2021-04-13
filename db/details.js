@@ -7,7 +7,7 @@ async function createDetailsPage() {
     }
     else {
 
-        document.querySelector('.coffee-name-details').textContent = CoffeeDrink.coffeeName;
+        document.querySelector('.coffee-name-details').textContent = CoffeeDrink.coffeeName.toUpperCase();
         document.querySelector('.coffee-value-details').textContent = CoffeeDrink.value;
         document.querySelector('.coffee-author').textContent = CoffeeDrink.login;
         document.querySelector('.coffee-description-details').textContent = CoffeeDrink.desc;
@@ -81,7 +81,7 @@ async function addComment() {
         let comment = new Comment(my_auth.user.email, text);
         let coffeeDrinkId = getURLParam('id');
         db.addComment(coffeeDrinkId, comment);
-        let coffeeDrink = db.getCoffeeDrink(coffeeDrinkId);
+        let coffeeDrink = await db.getCoffeeDrink(coffeeDrinkId);
         showComments(coffeeDrink);
     }
 
