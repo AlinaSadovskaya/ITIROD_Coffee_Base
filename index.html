@@ -39,9 +39,11 @@
         </div>
         <div class="header-search">
             <form class="search-form" onsubmit="searchCoffee(); return false;">
-                <input type="text" id="search-input" name="search-input" placeholder="Search...">
+                <input type="text" id="search-input" name="search-input" placeholder="Search..." autocomplete="off">
                 <button type="submit" name="search-button"><i class="fas fa-search"></i></button>
             </form>
+            <ul id="search-result" class="search-list">
+            </ul>
         </div>
         <div class="authorization">
             <a class="sign-up" id="signup-link" title='SignUp'><i class="fas fa-user-plus"></i></a>
