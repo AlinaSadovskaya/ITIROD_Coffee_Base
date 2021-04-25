@@ -12,6 +12,7 @@
     <script src="views/details.js"></script>
     <script src="views/error.js"></script>
 
+
     <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
@@ -40,10 +41,8 @@
         <div class="header-search">
             <form class="search-form" onsubmit="searchCoffee(); return false;">
                 <input type="text" id="search-input" name="search-input" placeholder="Search..." autocomplete="off">
-                <button type="submit" name="search-button"><i class="fas fa-search"></i></button>
             </form>
-            <ul id="search-result" class="search-list">
-            </ul>
+            <ul id="search-result" class="search-list"></ul>
         </div>
         <div class="authorization">
             <a class="sign-up" id="signup-link" title='SignUp'><i class="fas fa-user-plus"></i></a>
@@ -61,6 +60,7 @@
         <script src="db/db_model/ingredient.js"></script>
         <script src="db/db_model/coffee_drink.js"></script>
         <script src="db/db_model/comment.js"></script>
+        <script src="scripts/leave_search.js"></script>
     </main>
 
     <footer>

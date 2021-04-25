@@ -49,12 +49,21 @@ async function searchCoffee() {
                 searchResult.prepend(coffeeNode);
             }
         }
-        else alert('A drink with this name was not found( \nYou can create it by going to the "create" tab! \nP.s. You must be registered to be able to create a drink');
+        else {
+            //alert('A drink with this name was not found( \nYou can create it by going to the "create" tab! \nP.s. You must be registered to be able to create a drink');
+            let searchResult = document.getElementById('search-result');
+            searchResult.innerHTML = '';
+            let result = document.createElement("li");
+            let coffeeres = document.createElement("p");
+            coffeeres.classList.add('empty_res');
+            coffeeres.textContent = 'Sorry( Nothing found...'
+            result.appendChild(coffeeres);
+            searchResult.prepend(result);
+        }
     }
     else {
         let searchResult = document.getElementById('search-result');
         searchResult.innerHTML = '';
-        alert('Empty string to search!');
     }
 }
 

@@ -230,6 +230,12 @@ header a {
   font-size: 0.8em;
 }
 
+.empty_res {
+  font-size: 1.1em;
+  background-color: #665d56;
+  text-align:  center;
+}
+
 .header-search:hover .search-list,
 .header-search:active .search-list,
 .header-search:focus .search-list{
@@ -379,7 +385,7 @@ footer .contacts .mail-link:hover {
 
     header .header-search input {
       height: 60px;
-      width: 320px;
+      width: 370px;
       font-size: 1.8em;
       padding-left: 15px;
     }
@@ -398,7 +404,7 @@ footer .contacts .mail-link:hover {
     .search-list li {
       line-height: 70px;
       font-size: 2em;
-      width: 320px;
+      width: 370px;
     }
     
     .search-list li a {
@@ -411,7 +417,7 @@ footer .contacts .mail-link:hover {
       margin-top: 15px;
       margin-right: 15px;
     }
-    
+
     .authorization .sign-up{
       position: absolute;
       width: 80px;
