@@ -198,6 +198,49 @@ header a {
 .hidden {
   display: none;
 }
+
+.search-list {
+  display: none;
+  position: absolute;
+  top: 42px;
+  padding-top: 13px;
+}
+
+.search-list li {
+  display: block;
+  line-height: 40px;
+  background-color: #5e4836;
+  font-size: 1.2em;
+  font-weight:bolder;
+  width: 200px;
+}
+
+.search-list li a {
+  display: flex;
+  margin-left: 20px;
+  height: 100%;
+  width: 100%;
+}
+.search-list i {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.search-list p {
+  font-size: 0.8em;
+}
+
+.empty_res {
+  font-size: 1.1em;
+  background-color: #665d56;
+  text-align:  center;
+}
+
+.header-search:hover .search-list,
+.header-search:active .search-list,
+.header-search:focus .search-list{
+  display: block;
+}
 /*header end for pk version*/
 
 /*content*/
@@ -342,7 +385,7 @@ footer .contacts .mail-link:hover {
 
     header .header-search input {
       height: 60px;
-      width: 320px;
+      width: 370px;
       font-size: 1.8em;
       padding-left: 15px;
     }
@@ -351,6 +394,28 @@ footer .contacts .mail-link:hover {
       height: 60px;
       width: 60px;
       font-size: 1.8em;
+    }
+
+    .search-list {
+      top: 85px;
+      padding-top: 20px;
+    }
+    
+    .search-list li {
+      line-height: 70px;
+      font-size: 2em;
+      width: 370px;
+    }
+    
+    .search-list li a {
+      margin-left: 15px;
+      height: 100%;
+      width: 100%;
+    }
+
+    .search-list i {
+      margin-top: 15px;
+      margin-right: 15px;
     }
 
     .authorization .sign-up{
@@ -431,6 +496,7 @@ footer .contacts .mail-link:hover {
 :root {
   --color-back: #ddb49256;
   --color-input: #ffffff;
+  --sq-color: #E0926E;
 }
 
 @media (prefers-color-scheme: dark) {

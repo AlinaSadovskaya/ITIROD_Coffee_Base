@@ -65,7 +65,7 @@ label {
   align-items: center;
 }
 
-#beauty-input {
+#beauty-input-name {
     width: 300px;
     margin-top: -15px;
     font-size: 1.1em;
@@ -159,7 +159,7 @@ label {
     color: #4d3e32;
 }
 
-#description {
+#description-create {
     border-radius: 15px;
     padding: 10px;
     font-size: 1em;
@@ -181,11 +181,11 @@ label {
 }
   
 
-.input_value {
+.input_value_ingr {
     margin-left: 10px;
     margin-right: auto;
     text-align: center;
-    font-size: 1em;
+    font-size: 0.8em;
     display: inline-block;
     width: 20%;
     border-radius: 10px;
@@ -284,7 +284,7 @@ label {
         align-items: center;
       }
   
-      #beauty-input{
+      #beauty-input-name{
         margin-left: auto;
         margin-right: auto;
         border-radius: 30px;
@@ -335,8 +335,8 @@ label {
         min-height: 90px;
       }
   
-      .input_value {
-        font-size: 0.9em;
+      .input_value_ingr {
+        font-size: 0.8em;
         padding: 10px;
         width: 20%;
         min-height: 60px;
@@ -359,7 +359,7 @@ label {
       { width: 0px;}
       
       
-      #description {
+      #description-create {
         padding: 20px;
         font-size: 2em;
         width: 110%;
@@ -377,7 +377,7 @@ label {
         font-size: 2.5em;
       }
 
-      #beauty-input, 
+      #beauty-input-name, 
       #beauty-input-number {
         font-size: 2.5em;
       }

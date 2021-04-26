@@ -8,18 +8,21 @@ const routes = {
     '/': catalog
 };
 
-const scripts = {
-    '/register': "scripts/registrate.js",
-    '/login': "scripts/registrate.js"
-
-}
-
 function getPathWithoutParams(pathname) {
     let startParamsIndex = pathname.indexOf('?');
     if (startParamsIndex != -1) {
         return pathname.slice(0, startParamsIndex);
     }
     return pathname;
+}
+
+const scripts = {
+    '/login': "db/registrate.js",
+    '/register': "db/registrate.js",
+    '/catalog': "db/catalog.js",
+    '/create': "db/add_coffee.js",
+    '/details': "db/details.js",
+    '/': "db/catalog.js"
 }
 
 function addScript(pathname) {
@@ -29,13 +32,17 @@ function addScript(pathname) {
     rootDiv.appendChild(script);
 }
 
+async function addBack(pathname) {
+    if (pathname in scripts) {
+        addScript(pathname);
+    }
+}
+
 async function addContent(pathname) {
     pathname = getPathWithoutParams(pathname);
     if (pathname in routes) {
         rootDiv.innerHTML = routes[pathname];
-        if (pathname in scripts) {
-            addScript(pathname);
-        }
+        addBack(pathname);
     }
     else {
         onNavigate('/404');
