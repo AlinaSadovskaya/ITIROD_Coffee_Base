@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>CoffeeBase</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="views/registrate.js"></script>
+    <script src="views/login.js"></script>
+    <script src="views/catalog.js"></script>
+    <script src="views/create.js"></script>
+    <script src="views/details.js"></script>
+    <script src="views/error.js"></script>
+    <script src="https://kit.fontawesome.com/c25464de2f.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a id="image-link"><img src="images/coffee.png" alt="logo"></a>
+        </div>
+        <div class="main-menu">
+            <div class="header-title">
+                <h3><a href="#" onclick="return false;">COFFEE BASE <i class="fas fa-bars"></i> </a></h1>
+            </div>
+            <nav class="main-navigation">
+                <ul class="menu-list hidden">
+                    <li id="catalog-link"><a>CATALOG</a></li>
+                    <li id="create-link"><a>CREATE</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-search">
+            <form class="search-form" onsubmit="searchCoffee(); return false;">
+                <input type="text" id="search-input" name="search-input" placeholder="Search...">
+                <button type="submit" name="search-button"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <div class="authorization">
+            <a class="sign-up" id="signup-link" title='SignUp'><i class="fas fa-user-plus"></i></a>
+            <a class="login" id="login-link" title='LogIn'><i class="fa fa-sign-in"></i></a>
+        </div>
+    </header>
+
+    <main id="root">
+        <script src="scripts/main.js"></script>
+        <script src="scripts/links.js"></script>
+    </main>
+
+    <footer>
+        <h4 class="contact-us">Contact us: </h4>
+        <div class="contacts">
+            <a href="https://vk.com/asadovskaya99" class="vk-link"><i class="fab fa-vk"></i></a>
+            <a href="https://www.instagram.com/coffee.by/" class="instagram-link"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:alinasadovsckaya@yandex.ru" class="mail-link"><i class="far fa-envelope"></i></a>
+        </div>
+        <p class="copyright">Created by Alina Sadovskaya</p>
+    </footer>
+</body>
+
+</html>
