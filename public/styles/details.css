@@ -10,7 +10,7 @@ main {
   margin: 0 auto 0;
 }
 
-.coffee-img {
+.coffee-img-details {
     transition: 0.3s all linear;
     position: relative;
     display: inline-block;
@@ -31,7 +31,7 @@ main {
 }
 
   
-.coffee-image {
+.image-box {
     height: 150px;
     margin-left: 25px;
     margin-bottom: 25px;
@@ -39,13 +39,13 @@ main {
     position: relative;
 }
   
-.coffee-image img {
+.image-box img {
     height: 100%;
     position: relative;
     z-index: 1;
 }
   
-.coffee-ingredient {
+.coffee-ingredient_n {
     position: absolute;
     left: 6px;
     top: 0;
@@ -68,7 +68,7 @@ main {
     -webkit-clip-path: polygon(0 70%, 100% 70%, 100% 100%, 0% 100%);
 }
   
-.coffee-name {
+.coffee-name-details {
     overflow: hidden;
     text-overflow: ellipsis;
     font-size: 1.5em;
@@ -121,20 +121,22 @@ main {
 
 .comments{
   list-style: none;
-  height:200px;
-  overflow-y: scroll;
+  max-height:200px;
+  overflow-y: auto;
   margin-top: 20px;
+  overflow-x: hidden;
 }
 
 .ingredients{
   list-style: none;
   padding: 0;
+  max-height: 140px;
+  overflow-y: auto;
 }
 
 .ingredients li {
   margin-left: 100px;
-  padding: 7px 20px;
-  margin-bottom: 10px;
+  padding: 4px 20px;
   border-radius: 5px;
   background-color: #fde8d7;
   border-left: 10px solid #624c3a; 
@@ -146,9 +148,14 @@ main {
   transition: 0.3s all linear;
 }
 
+.ingredients li:not(:last-child)
+{
+  margin-bottom: 10px;
+}
+
 .ingedient-value,
 .ingedient-name{
-    font-size: 0.9em;
+    font-size: 0.7em;
 }
   
 .details {
@@ -160,7 +167,7 @@ main {
     margin-top: 5px;
 }
 
-.coffee-description {
+.coffee-description-details {
     border-radius: 20px;
     padding: 20px 50px;
     text-align: center;
@@ -205,9 +212,14 @@ main {
 }
   
 .comment-beauty {
-    margin-top: 20px;
     width: 100%;
 }
+
+.comment-beauty:not(:first-child)
+{
+  margin-top: 20px;
+}
+
   
 .comment {
     background-color: #ecd7c3;
@@ -219,8 +231,10 @@ main {
 }
 
 .comment-left {
-    width: 30%;
+    word-wrap: break-word;
+    width: 38%;
     box-sizing: border-box;
+    margin-right: 20px;
 }
   
 .comment-left p {
@@ -232,6 +246,11 @@ main {
     text-align: left;
 }
   
+.comment-text{
+  word-wrap: break-word;
+  max-width: 60%;
+}
+
 .comment-mess {
     width: 70%;
     box-sizing: border-box;
@@ -284,7 +303,7 @@ main {
         height: auto;
       }
   
-      .coffee-img {
+      .coffee-img-details {
         width: 100%;
         height: auto;
         margin: auto;
@@ -296,14 +315,14 @@ main {
         width: 100%;
       }
   
-      .coffee-image {
+      .image-box {
         margin-left: 40px;
         margin-bottom: 20px;
         margin-top: 40px;
         height: 300px;
       }
   
-      .coffee-ingredient {
+      .coffee-ingredient_n {
         position: absolute;
         left: 12px;
         top: 0;
@@ -311,7 +330,7 @@ main {
         width: 219px;
       }
   
-      .coffee-name {
+      .coffee-name-details {
         overflow: hidden;
         text-overflow: ellipsis;
         font-size: 4em;
@@ -352,13 +371,17 @@ main {
        font-size: 2em;
       }
 
+      .ingredients{
+        max-height: 250px;
+      }
+
       .ingredients li {
         margin-bottom: 5px;
         margin-left: 10px;
         margin-right: 10px;
       }
   
-      .coffee-description {
+      .coffee-description-details {
         margin-top: 50px;
         padding: 30px 50px;
         font-size: 2.5em;
@@ -389,9 +412,12 @@ main {
         padding: 30px;
         font-size: 2.5em;
       }
-  
+    
+      .comment-text{
+        max-width: 60%;
+      }
       .comment-left {
-        width: 40%;
+        min-width: 40%;
         box-sizing: border-box;
       }
   
@@ -405,7 +431,8 @@ main {
       }
 
       .comments{
-        height:400px;
+        max-height:600px;
       }
+      
   }
   
